@@ -1,0 +1,17 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  body {
+    @apply font-body text-[#232428];
+  }
+}
+@layer components {
+  .header {
+    @apply cursor-pointer opacity-75 transition hover:opacity-100;
+  }
+  .link {
+    @apply cursor-pointer relative text-lg font-medium before:absolute before:inset-x-0 before:-bottom-1.5 before:h-0.5 before:origin-left before:scale-x-0 before:transform before:rounded-bl before:transition-all before:bg-violet-500 before:duration-200 hover:before:scale-x-100;
+  }
+}
